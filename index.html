@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color"
+          content="#120d12">
+
+    <meta name="description"
+          content="A little birthday surprise">
+
+    <title>A Little Birthday Surprise</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+
+    <div id="particles"></div>
+
+    <!-- ========================================
+         INTRO
+    ========================================= -->
+
+    <section class="screen intro active">
+
+        <div class="eyebrow">
+            A little something, made just for you
+        </div>
+
+        <h1>
+            For
+            <span data-name>Someone Special</span>
+        </h1>
+
+        <p class="sub">
+            This is what i can afford to do for you, but i hope you'll like it.
+        </p>
+
+        <button class="primary"
+                id="beginButton">
+
+            Begin the surprise ✨
+
+        </button>
+
+    </section>
+
+
+    <!-- ========================================
+         COUNTDOWN
+    ========================================= -->
+
+    <section class="screen countdown">
+
+        <div class="eyebrow">
+            Before the magic begins
+        </div>
+
+        <h2>
+            It’s almost your day.
+        </h2>
+
+        <div class="clock">
+
+            <div class="time-unit">
+                <b id="days">00</b>
+                <small>Days</small>
+            </div>
+
+            <span>:</span>
+
+            <div class="time-unit">
+                <b id="hours">00</b>
+                <small>Hours</small>
+            </div>
+
+            <span>:</span>
+
+            <div class="time-unit">
+                <b id="minutes">00</b>
+                <small>Minutes</small>
+            </div>
+
+            <span>:</span>
+
+            <div class="time-unit">
+                <b id="seconds">00</b>
+                <small>Seconds</small>
+            </div>
+
+        </div>
+
+        <p id="countdownText">
+            Take a breath. There’s something waiting for you.
+        </p>
+
+        <button class="ghost"
+                id="peek">
+
+            Peek right now →
+
+        </button>
+
+    </section>
+
+
+    <!-- ========================================
+         CAKE
+    ======================================== -->
+
+    <section class="screen cake-screen">
+
+        <div class="eyebrow">
+            First things first
+        </div>
+
+        <h2>
+            Make a wish 🎂
+        </h2>
+
+        <div class="cake-art">
+
+            <div class="flame"></div>
+
+            <div class="candle"></div>
+
+            <div class="cake-top"></div>
+
+            <div class="cake-body"></div>
+
+        </div>
+
+        <p>
+            Close your eyes.
+            Think of something wonderful.
+        </p>
+
+        <button class="primary"
+                data-next>
+
+            Wish made 💛
+
+        </button>
+
+    </section>
+
+
+    <!-- ========================================
+         BALLOONS
+    ======================================== -->
+
+    <section class="screen balloons">
+
+        <div class="eyebrow">
+            A few reasons
+        </div>
+
+        <h2>
+            Pop the balloons 🎈
+        </h2>
+
+        <p>
+            Each one hides a little message.
+        </p>
+
+        <div class="balloon-grid"
+             id="balloons">
+        </div>
+
+        <button class="primary hidden"
+                id="balloonNext">
+
+            Keep going 💛
+
+        </button>
+
+    </section>
+
+
+    <!-- ========================================
+         MEMORIES
+    ======================================== -->
+
+    <section class="screen memories">
+
+        <div class="eyebrow">
+            A walk down memory lane
+        </div>
+
+        <h2>
+            Little moments,
+            big memories.
+        </h2>
+
+        <div class="gallery"
+             id="gallery">
+        </div>
+
+        <button class="primary"
+                data-next>
+
+            Keep going ✨
+
+        </button>
+
+    </section>
+
+
+    <!-- ========================================
+         LETTER
+    ======================================== -->
+
+    <section class="screen letter">
+
+        <div class="eyebrow">
+            One last thing…
+        </div>
+
+        <h2>
+            Someone wrote you a letter.
+        </h2>
+
+        <div class="envelope"
+             id="envelope">
+
+            <div class="flap"></div>
+
+            <div class="paper">
+                <span>
+                    Open me
+                </span>
+            </div>
+
+        </div>
+
+        <button class="primary"
+                id="openLetter">
+
+            Tap to open your letter 💌
+
+        </button>
+
+        <div class="letter-copy"
+             id="letterCopy">
+        </div>
+
+        <button class="primary hidden"
+                id="finish">
+
+            Continue ✨
+
+        </button>
+
+    </section>
+
+
+    <!-- ========================================
+         FINAL
+    ======================================== -->
+
+    <section class="screen finale">
+
+        <div class="eyebrow">
+            Today is yours
+        </div>
+
+        <div class="confetti">
+            ✦ ✧ ✦
+        </div>
+
+        <h1>
+            HAPPY
+            <br>
+            <span>BIRTHDAY</span>
+        </h1>
+
+        <p>
+            To
+            <strong data-name>
+                Someone Special
+            </strong>
+            —
+            someone worth celebrating.
+        </p>
+
+        <p class="signature">
+
+            With love,
+            <br>
+
+            <span data-from>
+                Someone Who Cares
+            </span>
+
+            ❤️
+
+        </p>
+
+        <button class="ghost"
+                id="musicBtn">
+
+            🔊 Music on
+
+        </button>
+
+        <p class="footer">
+            Made with a little love and a lot of memories.
+        </p>
+
+    </section>
+
+
+    <!-- ========================================
+         BACKGROUND MUSIC
+    ======================================== -->
+
+    <audio id="music"
+           loop
+           preload="auto">
+
+        <source src="assets/audio/birthday.mp3"
+                type="audio/mpeg">
+
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
